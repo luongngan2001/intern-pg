@@ -156,7 +156,7 @@ const SignUpForm = (props: Props) => {
                     onChange={(e) => setFormValues({ ...formValues, repeatPassword: e.target.value })}
                 />
 
-                {!!validate?.password && (
+                {!!validate?.repeatPassword && (
                     <small className="text-danger">
                         <FormattedMessage id={validate?.repeatPassword} />
                     </small>

@@ -18,5 +18,6 @@
   "regionRequire": "Quốc gia không được để trống",
   "stateRequire": "Thành phố không được để trống",
   "login": "Đăng nhập",
-  "register": "Đăng ký"
+  "register": "Đăng ký",
+  "logout": "Đăng xuất"
 }

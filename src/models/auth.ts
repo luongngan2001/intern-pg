@@ -29,3 +29,11 @@ export interface ILocationParams {
   name: string;
   pid: string | null;
 }
+
+export interface IListParams {
+  albumId: string | number;
+  id: string | number;
+  title: string;
+  url: string;
+  thumbnailUrl: string;
+}

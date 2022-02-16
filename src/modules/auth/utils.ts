@@ -30,7 +30,7 @@ const validateRepeatPassword = (password: string, repeatPassword: string) => {
       return 'passwordRequire';
   }
 
-  if (repeatPassword !== password) {
+  if (password !== repeatPassword) {
       return 'matchPasswordInvalid';
   }
   return '';

@@ -2,5 +2,7 @@ export const ROUTES = {
   home: '/home',
   contact: '/contact',
   login: '/login',
-  signUp: '/sign-up'
+  signUp: '/sign-up',
+  list: '/list',
+  userDetail: '/user-detail'
 };
