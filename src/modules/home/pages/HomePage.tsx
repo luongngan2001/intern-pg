@@ -27,10 +27,11 @@ const HomePage = (props: Props) => {
           <FormattedMessage id='logout' />
         </button>
       </div>
-      <div>HomePage</div>
+      <div>Home</div>
       <ul>
         <li><a href='/list'>List</a></li>
         <li><a href='/user-detail'>UserDetail</a></li>
+        <li><a href='/table'>Table</a></li>
       </ul>
     </div>
   );

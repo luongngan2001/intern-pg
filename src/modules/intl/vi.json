@@ -19,5 +19,6 @@
   "stateRequire": "Thành phố không được để trống",
   "login": "Đăng nhập",
   "register": "Đăng ký",
-  "logout": "Đăng xuất"
+  "logout": "Đăng xuất",
+  "dateInvalid": "Invalid date"
 }

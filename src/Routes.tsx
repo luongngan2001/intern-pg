@@ -10,6 +10,7 @@ const LoginPage = lazy(() => import('./modules/auth/pages/LoginPage'));
 const SignUpPage = lazy(() => import('./modules/auth/pages/SignUpPage'));
 const ListPage = lazy(() => import('./modules/list/pages/ListPage'));
 const UserDetailPage = lazy(() => import('./modules/user/pages/UserDetailPage'));
+const TablePage = lazy(() => import('./modules/table/pages/PayrollPage'));
 
 interface Props {}
 
@@ -25,6 +26,7 @@ export const Routes = (props: Props) => {
         <Route path={ROUTES.contact} component={ContactPage} />
         <Route path={ROUTES.list} component={ListPage} />
         <Route path={ROUTES.userDetail} component={UserDetailPage} />
+        <Route path={ROUTES.table} component={TablePage} />
 
         {document.cookie.indexOf(ACCESS_TOKEN_KEY) ?
           <Route path="/" component={LoginPage} /> :

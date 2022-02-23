@@ -67,22 +67,24 @@ const ListPage = () => {
                     </button>
                 </div>
             </div>
-            {newList.map((li, index) => 
-                <div key={li.id} className='item' style={Number(li.id) % 2 == 0 ? { backgroundColor: '#dddddd' } : { backgroundColor: 'white' }}>
-                    <img
-                        src={li.thumbnailUrl}
-                        alt=''
-                    />
-                    <div id='content'>
-                        <EditText
-                            key={li.id}
-                            value={li.title}
-                            onChange={handleChange(index)}
+            <div id='list'>
+                {newList.map((li, index) =>
+                    <div key={li.id} className='item' style={Number(li.id) % 2 == 0 ? { backgroundColor: '#dddddd' } : { backgroundColor: 'white' }}>
+                        <img
+                            src={li.thumbnailUrl}
+                            alt=''
                         />
-                        <div>{new Date(Date.now()).toString()}</div>
+                        <div id='content'>
+                            <EditText
+                                key={li.id}
+                                value={li.title}
+                                onChange={handleChange(index)}
+                            />
+                            <div>{new Date(Date.now()).toString()}</div>
+                        </div>
                     </div>
-                </div>
-            )}
+                )}
+            </div>
         </div>
     );
 

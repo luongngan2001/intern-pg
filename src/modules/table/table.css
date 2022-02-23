@@ -1,0 +1,132 @@
+#table-page {
+  background-color: #f1f5f5;
+  color: #0a4258;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#table-page #header-table-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+#table-page #header-table-page h5 {
+  font-weight: 600;
+}
+
+#table-page #header-table-page button {
+  background-color: #14a5d1;
+}
+
+#table-page #header-table-page button:hover {
+  opacity: 0.9;
+}
+
+#table-page #filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#table-page #filter #filter-body .filter-item {
+  margin-right: 10px;
+  background-color: white;
+  width: 200px;
+}
+
+#table-page #filter #filter-button button {
+  height: 100%;
+  padding: 0px 30px;
+}
+
+#table-page #filter #filter-button #apply {
+  color: #14a5d1;
+  border: 2px solid #14a5d1;
+  margin-right: 10px;
+}
+
+#table-page #filter #filter-button #apply:hover {
+  color: white;
+  background-color: #14a5d1;
+}
+
+#table-page #filter #filter-button #clear {
+  color: palevioletred;
+  border: 2px solid palevioletred;
+}
+
+#table-page #filter #filter-button #clear:hover {
+  color: white;
+  background-color: palevioletred;
+}
+
+table thead tr th .fa-arrow-up {
+  margin-left: 10px;
+  display: none;
+  cursor: pointer;
+}
+
+table thead tr th:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+table thead tr th:hover .fa-arrow-up {
+  display: block;
+}
+
+table tbody tr {
+  background-color: white;
+}
+
+table tbody tr td .fa-trash-alt {
+  color: palevioletred;
+  cursor: pointer;
+}
+
+table tbody tr td .fa-trash-alt:hover {
+  opacity: 0.8;
+}
+
+form#form-view-details div .item-view-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 10px;
+}
+
+form#form-view-details div .item-view-details p {
+  width: 50%;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+  #table-page #filter {
+    display: block;
+  }
+  #table-page #filter #filter-body .filter-item {
+    margin-bottom: 10px;
+  }
+  #table-page #filter #filter-button button {
+    padding: 5px 30px;
+  }
+}
+/*# sourceMappingURL=table.css.map */

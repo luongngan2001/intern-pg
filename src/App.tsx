@@ -12,6 +12,7 @@ import { API_PATHS } from './configs/api';
 import { RESPONSE_STATUS_SUCCESS } from './utils/httpResponseCode';
 import { setUserInfo } from './modules/auth/redux/authReducer';
 import '../src/modules/list/list.css';
+import '../src/modules/table/table.css';
 
 function App() {
   const dispatch = useDispatch<ThunkDispatch<AppState, null, Action<string>>>();

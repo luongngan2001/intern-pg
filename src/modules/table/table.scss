@@ -1,0 +1,132 @@
+$main-text-color: rgb(10, 66, 88);
+$main-button-color: rgb(20, 165, 209);
+$demo: rgb(158, 158, 158);
+$button-color: palevioletred;
+
+#table-page {
+    background-color: #f1f5f5;
+    color: $main-text-color;
+    padding: 20px;
+    border-radius: 20px;
+
+    #header-table-page {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0;
+        h5 {
+            font-weight: 600;
+        }
+        button {
+            background-color: $main-button-color;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+    }
+
+    #filter {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        #filter-body {
+            .filter-item{
+                margin-right: 10px;
+                background-color: white;
+                width: 200px;
+            }
+        }
+        #filter-button {
+            button {
+                height: 100%;
+                padding: 0px 30px;
+            }
+            #apply {
+                color: $main-button-color;
+                border: 2px solid $main-button-color;
+                margin-right: 10px;
+            }
+            #apply:hover {
+                color: white;
+                background-color: $main-button-color;
+            }
+            #clear {
+                color: $button-color;
+                border: 2px solid $button-color;
+            }
+            #clear:hover {
+                color: white;
+                background-color: $button-color;
+            }
+        } 
+    }
+}
+
+table {
+    thead {
+        tr {
+            th {
+                .fa-arrow-up {
+                    margin-left: 10px;
+                    display: none;
+                    cursor: pointer;
+                }
+            }
+            th:hover {
+                display: flex;
+                .fa-arrow-up {
+                    display: block;
+                }
+            }
+        }
+    }
+    tbody {
+        tr {
+            background-color: white;
+            td {
+                .fa-trash-alt {
+                    color: $button-color;
+                    cursor: pointer;
+                }
+                .fa-trash-alt:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+form#form-view-details {
+    div {
+        .item-view-details {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+            p {
+                width: 50%;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    #table-page {
+        #filter {
+            display: block;
+            #filter-body {
+                .filter-item {
+                    margin-bottom: 10px;
+                }
+            }
+            #filter-button {
+                button {
+                    padding: 5px 30px;
+                }
+            }
+        }
+    }
+    
+}
